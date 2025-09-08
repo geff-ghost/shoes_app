@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shoes_app/global_variables.dart';
+import 'package:shoes_app/product_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -8,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> filters = const ['All', 'Addidas', 'Puma', 'Nike', 'Bata'];
+  final List<String> filters = const ['All', 'Jordans', 'Puma', 'Nike', 'Bata', 'Sneakers', 'Ashion', 'Fila', 'Casual'];
   late String selectedFilter;
 
   //sets the initial filter when the page is loaded
@@ -68,9 +70,9 @@ class _HomePageState extends State<HomePage> {
                           });
                         },
                         child: Chip(
-                          backgroundColor: selectedFilter == filter 
-                            ? Theme.of(context).colorScheme.primary 
-                            : Color.fromRGBO(245, 247, 249, 1),
+                          backgroundColor: selectedFilter == filter
+                              ? Theme.of(context).colorScheme.primary
+                              : Color.fromRGBO(245, 247, 249, 1),
                           side: BorderSide(
                             color: const Color.fromRGBO(425, 247, 249, 1),
                           ),
@@ -85,6 +87,24 @@ class _HomePageState extends State<HomePage> {
                           labelStyle: TextStyle(fontSize: 16),
                         ),
                       ),
+                    );
+                  },
+                ),
+              ),
+
+              //ListView builder of the products
+              Expanded(
+                child: ListView.builder(
+                  itemCount: products.length,
+                  itemBuilder: (context, index) {
+                    final product = products[index];
+                    return ProductCard(
+                      title: product['title'] as String,
+                      price: product['price'] as double,
+                      image: product['imageUrl'] as String,
+                      backroungColor: index.isEven 
+                        ? Color.fromRGBO(216, 240, 253, 1)
+                        : const Color.fromRGBO(245, 247, 249, 1),
                     );
                   },
                 ),

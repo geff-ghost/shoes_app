@@ -1,0 +1,77 @@
+final products = [
+  {
+    'id': '0',
+    'title': 'Jordans',
+    'price': 45.55,
+    'imageUrl': 'assests/images/air-jordan.png',
+    'company': 'Nike',
+    'sizes': [9, 10, 12, 13],
+  },
+  {
+    'id': '1',
+    'title': 'Ashion',
+    'price': 50.23,
+    'imageUrl': 'assests/images/ashion.png',
+    'company': 'Ashion',
+    'sizes': [9, 10, 12, 13, 15],
+  },
+  {
+    'id': '2',
+    'title': 'Bata Shoes',
+    'price': 20.12,
+    'imageUrl': 'assests/images/bata.png',
+    'company': 'Bata',
+    'sizes': [9, 13],
+  },
+  {
+    'id': '3',
+    'title': 'Casual',
+    'price': 34.14,
+    'imageUrl': 'assests/images/casual.png',
+    'company': 'Casual',
+    'sizes': [6, 9, 10, 15],
+  },
+  {
+    'id': '4',
+    'title': 'Fila',
+    'price': 35.99,
+    'imageUrl': 'assests/images/fila.png',
+    'company': 'Fila',
+    'sizes': [9, 10, 12, 13],
+  },
+  {
+    'id': '5',
+    'title': 'Nike',
+    'price': 54.66,
+    'imageUrl': 'assests/images/nike.png',
+    'company': 'Nike',
+    'sizes': [4, 9, 10, 12],
+  },
+  {
+    'id': '6',
+    'title': 'Puma',
+    'price': 60.55,
+    'imageUrl': 'assests/images/puma.png',
+    'company': 'Puma',
+    'sizes': [9, 12, 13, 17],
+  },
+  {
+    'id': '7',
+    'title': 'Sneakers',
+    'price': 30.13,
+    'imageUrl': 'assests/images/red-sneakers.png',
+    'company': 'Sneakers',
+    'sizes': [9, 12, 15, 17],
+  },
+];
+
+final cart = [
+  {
+    'id': '0',
+    'title': 'Jordans',
+    'price': 45.55,
+    'imageUrl': 'assests/images/air-jordan.png',
+    'company': 'Nike',
+    'sizes': [9, 10, 12, 13],
+  },
+];
