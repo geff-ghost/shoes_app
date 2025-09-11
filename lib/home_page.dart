@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
               //heading of the app
               Text(
                 'Shoes Collection',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
+                style: Theme.of(context).textTheme.titleLarge,
               ),
 
               SizedBox(height: 20),
