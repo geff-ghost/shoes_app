@@ -72,6 +72,6 @@ final cart = [
     'price': 45.55,
     'imageUrl': 'assests/images/air-jordan.png',
     'company': 'Nike',
-    'sizes': [9, 10, 12, 13],
+    'size': [9],
   },
 ];
